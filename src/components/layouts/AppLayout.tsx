@@ -1,15 +1,21 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import "./AppLayout.css";
 
-const AppLayout = () => {
+const AppLayout: React.FC = () => {
   return (
-    <div>
-      {/* TODO NavBar */}
-      <header>
-        <h1>My Flashcards App</h1>
+    <div className="layout">
+      <header className="layout-header">
+        <h1>Flashcards</h1>
+        <nav className="layout-nav">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+        </nav>
       </header>
-      <main>{<Outlet />}</main> {/* Render nested from Router here */}
-      <footer>
+      <main className="layout-main">
+        <Outlet /> {/* Render nested from Router here */}
+      </main>
+      <footer className="layout-footer">
         <p>© 2024 Flashcards App</p>
       </footer>
     </div>

@@ -1,0 +1,67 @@
+/* Layout container */
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure it takes the full height of the viewport */
+}
+
+/* Header styling */
+.layout-header {
+  width: 100%;
+  padding: 1rem;
+  /* text-align: center; */
+  background-color: #242424;
+  margin: 0;
+}
+
+.layout-header h1 {
+  margin: 0;
+  font-size: 3.4rem;
+}
+
+.layout-nav a {
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+/* Main content area */
+.layout-main {
+  flex: 1; /* Allows main content to grow and push the footer to the bottom */
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /*  Creates a box effect */
+}
+
+/* Footer styling */
+.layout-footer {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .layout-main {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .layout-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .layout-nav a {
+    font-size: 0.7rem;
+  }
+
+  .layout-footer {
+    font-size: 0.6;
+  }
+}

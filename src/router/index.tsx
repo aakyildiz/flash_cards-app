@@ -12,8 +12,8 @@ const Router = () => {
 
       {/* Applayout */}
       <Route element={<AppLayout />}>
-        <Route index element={<></>} /> {/* Default route */}
-        <Route path="dashboard" element={<></>} />
+        <Route index path="/" element={<></>} />
+        <Route path="/about" element={<></>} />
       </Route>
     </Routes>
   );
