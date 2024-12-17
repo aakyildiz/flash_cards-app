@@ -17,31 +17,32 @@ This project uses yarn3 as package manager. Installing yarn is not needed, in th
 
 ### 1. Clone the Repository
 
-    ```bash
-    git clone https://github.com/your-username/flashcards-app.git
-    cd flashcards-app
-
-````
+```bash
+git clone https://github.com/your-username/flashcards-app.git
+cd flashcards-app
+```
 
 ### 2. Install Frontend Dependencies
- ```bash
- corepack enable
- yarn install
- ```
+
+```bash
+corepack enable
+yarn install
+```
 
 ### 3. Start the Frontend
- ```bash
- yarn dev
- ```
 
- ---
+```bash
+yarn dev
+```
+
+---
 
 ## Usage
-- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ---
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-````
