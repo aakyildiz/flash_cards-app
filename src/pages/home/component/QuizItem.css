@@ -1,0 +1,28 @@
+.quizItem {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1.5rem; /* Internal spacing */
+  margin: 1rem auto; /* Space between cards */
+  max-width: 400px; /* Limit card width */
+  text-align: center; /* Center text inside the card */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.quizItem:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.quizName {
+  color: #2e2e2e;
+  font-size: 1.5rem; /* Large font for the quiz name */
+  font-weight: bold; /* Make the name stand out */
+  margin-bottom: 0.5rem; /* Space below the name */
+}
+
+.quizDescription {
+  font-size: 1rem; /* Normal font size for description */
+  color: #666666; /* Subtle color for secondary text */
+  margin: 0; /* Remove default margin */
+}
