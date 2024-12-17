@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import AppLayout from "../components/layouts/AppLayout";
+import Home from "../pages/home";
+import Quiz from "../pages/quiz";
 
 const Router = () => {
   return (
@@ -12,8 +14,9 @@ const Router = () => {
 
       {/* Applayout */}
       <Route element={<AppLayout />}>
-        <Route index element={<></>} /> {/* Default route */}
-        <Route path="dashboard" element={<></>} />
+        <Route index path="/" element={<Home />} />
+        <Route path="/about" element={<></>} />
+        <Route path="/quiz" element={<Quiz />} />
       </Route>
     </Routes>
   );

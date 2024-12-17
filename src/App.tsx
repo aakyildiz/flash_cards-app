@@ -6,13 +6,6 @@ import axios from "axios";
 import Router from "./router";
 
 function App() {
-  // const [count, setCount] = useState(0);
-  const [questions, setQuestions] = useState({});
-
-  useEffect(() => {
-    axios.get("http://localhost:8000/questions");
-  }, []);
-
   return <Router></Router>;
 }
 
